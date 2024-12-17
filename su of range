@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int x,y;
+    scanf("%d\n%d",&x,&y);
+    int z=0;
+    while(x<=y){
+        z+=x;
+        x++;
+    }
+    printf("%d",z);
+    return 0;
+}
