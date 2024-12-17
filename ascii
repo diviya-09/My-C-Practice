@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<ctype.h>
+int main()
+{
+    //fill the code
+    char n;
+    scanf("%c",&n);
+    if(isalpha(n)){
+        printf("ASCII of %c is %d",n,n);
+    }
+    else{
+        printf("Not a vowel");
+    }
+    return 0;
+}
