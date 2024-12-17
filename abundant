@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int n,i,r;
+    scanf("%d",&n);
+    for(i=1;i<12;i++);
+    
+    if(i%n==0){
+    printf("Not Abundant number");
+    }
+    else{
+    printf("Abundant Number");
+    }
+    
+    
+    return 0;
+}
