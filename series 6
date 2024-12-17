@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter n value\n");
+    scanf("%d",&n);
+    int first=10,second=5;
+    for(int i=1;i<=n;i++){
+        if(i%2==0){
+            printf("%d ",second);
+            second+=10;
+        }
+        else{
+            printf("%d ",first);
+            first+=50;
+        }
+    }
+    return 0;
+}
