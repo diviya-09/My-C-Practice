@@ -1,0 +1,100 @@
+#include <stdio.h>
+
+int main() {
+    int departmentCode;
+    char eventCode;
+    printf("Welcome to AsInTra\n");
+    printf("1. CSE\n2. ECE\n3. MECH\n4. CIVIL\n");
+    printf("Enter Department\n");
+    scanf("%d", &departmentCode);
+    switch (departmentCode) {
+        case 1: // CSE
+            printf("Go Straight\n");
+            printf("Welcome to CSE Department\n");
+            printf("a. Coding\nb. Web Designing\nc. Database\n");
+            printf("Enter event\n");
+            scanf(" %c", &eventCode); 
+            switch (eventCode) {
+                case 'a':
+                    printf("Go to Hall S108\n");
+                    break;
+                case 'b':
+                    printf("Go to Hall S208\n");
+                    break;
+                case 'c':
+                    printf("Go to Hall S206\n");
+                    break;
+                default:
+                    printf("No Event exist\n");
+            }
+            break;
+
+        case 2: // ECE
+            printf("Go Right\n");
+            printf("Welcome to ECE Department\n");
+            printf("a. Project Expo\nb. PPT\nc. Circuit Debug\n");
+            printf("Enter event\n");
+            scanf(" %c", &eventCode);
+            switch (eventCode) {
+                case 'a':
+                    printf("Go to Hall M108\n");
+                    break;
+                case 'b':
+                    printf("Go to Hall M208\n");
+                    break;
+                case 'c':
+                    printf("Go to Hall M206\n");
+                    break;
+                default:
+                    printf("No Event exist\n");
+            }
+            break;
+
+        case 3: // MECH
+            printf("Go Left\n");
+            printf("Welcome to MECH Department\n");
+            printf("a. BottleRocketery\nb. PPT\nc. Mad 4 CAD\n");
+            printf("Enter event\n");
+            scanf(" %c", &eventCode);
+            switch (eventCode) {
+                case 'a':
+                    printf("Go to Hall N108\n");
+                    break;
+                case 'b':
+                    printf("Go to Hall N208\n");
+                    break;
+                case 'c':
+                    printf("Go to Hall N206\n");
+                    break;
+                default:
+                    printf("No Event exist\n");
+            }
+            break;
+
+        case 4: // CIVIL
+            printf("Go Straight and turn Left\n");
+            printf("Welcome to CIVIL Department\n");
+            printf("a. CADD Quest\nb. Brick Bonding\nc. Model Making\n");
+            printf("Enter event\n");
+            scanf(" %c", &eventCode);
+            switch (eventCode) {
+                case 'a':
+                    printf("Go to Hall C108\n");
+                    break;
+                case 'b':
+                    printf("Go to Hall C208\n");
+                    break;
+                case 'c':
+                    printf("Ho to Hall C206\n");
+                    break;
+                default:
+                    printf("No Event exist\n");
+            }
+            break;
+
+        default:
+            printf("Wrong Input\n");
+    }
+
+    return 0;
+}
