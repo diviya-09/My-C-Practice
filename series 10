@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int main()
+{
+
+	int x;
+	printf("Enter n values\n");
+	scanf("%d",&x);
+	int first=6,help=3;
+	for(int i=1;i<=x;i++){
+	    printf("%d ",first);
+	    first+=help;
+	    help+=2;
+	}
+	return 0;
+}
