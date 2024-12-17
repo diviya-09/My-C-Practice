@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int std,term,tot_std,tot_term;
+    printf("Enter the total number of student inr the class:");
+    scanf("%d",&std);
+    printf("Enter the number of terms:");
+    scanf("%d\n",&term);
+    tot_std=std/term;
+    printf("Total number of terms:%d\n",tot_std);
+    tot_term=std%term;
+    printf("total number of remaining student:%d\n",tot_term);
+    return 0;
+}
