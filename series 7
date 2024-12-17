@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+
+	int n;
+	printf("Enter n value\n");
+	scanf("%d",&n);
+//	int first=1,second=4,next=3;
+//	printf("%d %d ",first,second);
+	for(int i=1;i<=n;i++){
+	   // next=(next*3);
+	   int result=pow(i,i);
+	    printf("%d ",result);
+	}
+	return 0;
+} 
