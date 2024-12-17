@@ -1,0 +1,10 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+    int temperature,wind_velocity;
+    scanf("%d\n%d",&temperature,&wind_velocity);
+    float windChillFactor = 35.74 + 0.6215 * temperature - 35.75 * pow(wind_velocity, 0.16) + 0.4275 * temperature * pow(wind_velocity, 0.16);
+    printf("%.2f",windChillFactor);
+    return 0;
+}
